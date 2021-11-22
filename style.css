@@ -1,0 +1,387 @@
+body {
+		padding:0;
+		margin: 0;
+		box-sizing:border-box;
+		background:#DDDDDD;
+		font-family: 'Ubuntu', sans-serif;
+		animation: openingEffect 0.5s;
+}
+/* header */
+.page-header {
+		position:fixed;
+		top:0;
+		left:5%;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		width: 90vw;
+		padding:10px;
+		background:rgba(255,255,255,0.7);
+		border-radius: 0px 0px 5px 5px;
+		box-shadow: 0 1px 4px #4f4f4f;
+		z-index:3;
+}
+.page-header a {
+		display:inline-block;
+		text-decoration: none;
+		padding:10px;		
+		border-radius: 5px;
+		transition: all 0.5s;
+		cursor: pointer;
+}
+.page-header i {
+		color: #2d2d2d;
+		font-size:1.5em;
+		margin:10px;
+}
+.page-header h2 {
+		flex:2;
+		text-align: center;
+		font-weight: 600;
+}
+.page-header h2 span {
+		color: #D65A31;
+}
+.page-header a:hover {
+		background: #e4e4e4;
+		box-shadow:inset 0 0 5px #373737;
+}
+/* Sidebar */
+.sidebar {
+		position: fixed;		
+		top:0;
+		left:-85%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 100vh;
+		padding-top: 20px;
+		width:30vw;
+		background: white;
+		box-shadow: 1px 0 5px #2f2f2f;
+		transition: left 0.6s;
+		z-index: 4;
+}																
+.sidebar:target {
+		left:0;
+}
+.sidebar .close {
+		position: absolute;
+		text-decoration: none;
+		top:0;
+		right:0;
+		padding:5px;
+		font-size: 2em;
+		cursor: pointer;
+}
+.sidebar img {
+		width: 60%;
+		height:33%;
+}
+.sidebar .menubtns {
+		display: flex;
+		flex-direction: column;
+		margin: 30px 0 0 0;
+		width: 100%;
+}
+.menubtns a {
+		display:block;
+		width: 100%;
+		text-decoration: none;
+		font-size: 2em;
+		color:#30475E;
+		padding: 10px 0 10px 30%;
+		transition: all 0.5s;
+}
+.menubtns a:hover {
+		background: #30475E;
+		color:#e8e8e8;
+		padding-left: 40%; 
+}
+/* Page Container */
+.page-container {
+		height: 100vh;
+		width:100vw;
+		overflow: hidden;
+}
+.page-container > div {
+   height: 100vh;
+		width: 100vw;
+		overflow: scroll;
+}
+.page-container > div:target {
+		animation: openingEffect 1s;
+}
+
+/* Landing page */
+
+.landing-page {
+		background: transparent;
+}
+.carousel {
+		margin-top: 80px;
+}
+.carousel img {
+		height: 60vh;
+}
+.carousel-caption h3 {
+		font-size: 3em;
+		color:#222831;
+		font-weight: 600;
+		text-shadow: 0 0 5px #e7e7e7;
+}
+.carousel .mask {
+		background: linear-gradient(	 45deg, rgba(29, 236, 197, 0.5), rgba(91, 14, 214, 0.5) 100%);
+}
+.landing-page h2 {
+		margin: 25px;
+		text-align: center;
+		font-weight: bold;
+}
+.landing-desc {
+		display: flex;
+		gap:15px;
+		box-sizing: border-box;
+		padding: 20px;
+}
+.landing-desc p  {
+   width: 33%;
+	 text-align: left;
+}
+.landing-desc p span {
+   font-size: 1.3rem;
+		font-weight: 600;
+}
+
+/* Workout page */
+
+.workout-page {
+		background: transparent;
+}
+.modal-controls {
+		display:flex;
+		flex-wrap: wrap;
+		width: 60vw;
+		height: 60vh;
+		background: white;
+		box-shadow: 0 2px 3px #323232;
+		padding:20px 20px 0 20px;
+		margin: 20vh auto;
+		border-radius:3px;
+}
+.maleBtn, .femaleBtn {
+		display:flex;
+		flex-direction: column;
+		align-items: center;		
+		gap:30px;
+		margin-top: 20px;
+}
+.modal-controls .maleBtn {
+		width: 50%;
+		height: 100%;
+}
+.modal-controls h2 {
+		font-weight: 600;
+}
+.modal-controls .femaleBtn {
+		width: 50%;
+		height: 100%;
+}
+.maleBtn a {
+		display: block;
+		text-align: center;
+		width: 80%;
+		padding:10px;
+		color: white;
+		font-size: 1.2em;
+		background: #30475E;
+		border-radius:3px;
+		box-shadow: 0 1px 2px #393939;
+		font-weight: 400;
+		transition: all 0.5s;
+}
+.femaleBtn a {
+		display: block;
+		text-align: center;
+		width: 80%;
+		padding:10px;
+		color: #30475E;
+		font-size: 1.2em;
+		background: #DDDDDD;
+		border-radius:5px;
+		box-shadow: 0 1px 2px #393939;
+		font-weight: 500;
+		transition: all 0.5s;
+}
+.modal-controls i {
+		display: block;
+		font-size: 7em;
+		color:#F05454 ;
+		filter: drop-shadow(0 1px 2px #4f4f4f);
+}
+.maleBtn a:hover {
+		background: white;
+		color:#30475E;
+}
+.femaleBtn a:hover {
+		background: #30475E;
+		color:white;
+}
+.workout-modal {
+   position: fixed;
+   top:0;
+   display:none;
+		width: 100vw;
+		min-height: 100vh;
+		background: rgba(0,0,0,0.7);
+		z-index:10;
+}
+
+.modal-container {
+   position: absolute;
+   top:0;
+   left:10vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+		max-height:100vh;
+		width: 80vw;
+		background: white;
+		border-radius: 5px;
+		padding:25px;
+		overflow: scroll;
+}
+.modal-container .close {
+    position: absolute;
+    top:0;
+    right: 0;
+		font-size:2em;
+		padding:5px;
+		cursor: pointer;
+}
+.modal-container h2 {
+		font-weight: 600;
+}
+.drop-content {
+		margin: 20px;
+}
+.drop-content a {
+   text-decoration: none;
+		display: block;
+		width: 70vw;
+		padding:5px;
+		border-radius:3px;
+		box-shadow:0 1px 2px #3a3a3a;
+		background:#222831;
+		color: white;
+		font-size: 1.5em;
+		font-weight:600;
+		text-align: center;
+}
+.hidden-content {
+		width: 70vw;
+		max-height:50vh;
+		background: #dddddd;
+		box-shadow: 0 1px 2px #3f3f3f;
+		padding:20px;
+		display:flex;
+		flex-wrap: wrap;
+		gap:15px;
+		overflow: scroll;
+}
+
+.hidden-content p, img {
+		width: 48%;
+}
+.hidden-content img {
+		height: 35vh;
+}
+.hidden-content p {
+		padding:10px;
+		font-size:1.2rem;
+		font-weight: 400;
+}
+.hidden-content span {
+		font-size: 1.5rem;
+		font-weight: bold;
+		padding:3px;
+}
+
+.workout-page > div:target {
+		display: block;
+}
+
+/* dietplan page */
+.dietplan-page {
+		background: yellow;
+}
+.BMI-page {
+		background: purple;
+}
+.about-page {
+		background: mintcream;
+}
+
+
+/* Opening animation */
+@keyframes openingEffect {
+		0% {
+				opacity: 0;
+		}
+		100% {
+				opacity: 1;
+		}
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+		.sidebar {
+				width: 80vw;
+		}
+		.menubtns a{
+				font-size:1.3em;
+		}
+		.landing-desc {
+				flex-direction: column;
+		}
+		.landing-desc p {
+				width: 100%;
+		}
+		.modal-controls {
+				flex-direction: column;
+				flex-wrap: nowrap;
+				align-items: center;
+				padding-bottom: 20px;
+				width: 80vw;
+				height: auto;
+				gap:20px;
+		}
+		.maleBtn, .femaleBtn {
+				width: 100%;
+				height: auto;
+		}
+		.modal-controls h2 {
+		    width: 50vw;
+				font-size: 1.5em;
+				text-align: center;
+		}
+		.maleBtn a, .femaleBtn a{
+				width: 50vw;
+				font-size: 1em;
+				font-weight: normal;
+		}
+		.hidden-content {
+				flex-direction: column;
+				flex-wrap: nowrap;
+		}
+		.hidden-content img, .hidden-content p {
+				width: 100%;
+		}
+		.hidden-content p {
+				font-size: 1rem;
+				font-weight: normal;
+		}
+		.modal-content h2 {
+				font-weight: normal;
+		}
+}

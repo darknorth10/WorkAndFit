@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Workout and Fitness Guide</title>
+		<link rel="icon" type="image/gif" href="https://www.dropbox.com/s/5kgdrk3uxzvfpuj/Logo.png?raw=1" sizes="50x50">
+<!-- Font Awesome -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+<!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<!-- MDBootstrap-->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.0/mdb.min.css" rel="stylesheet">
+<!-- Custom Css -->
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+		
+		<!-- Contents -->
+		<div class="page-header"> <!-- Header -->
+				<a href="#sidebar" id="menu"><i class="fas fa-bars"></i></a>
+				<h2><span>Workout</span> & Fitness</h2>
+				<a id="night"><i class="fas fa-moon"></i></a>
+		</div>
+		<div class="sidebar" id="sidebar"> <!-- sidebar -->
+		   <a href="#" class="close">&times;</a>
+		   <img src="https://www.dropbox.com/s/5kgdrk3uxzvfpuj/Logo.png?raw=1" alt="">
+		   <div class="menubtns">
+		    	<a href="#home">Home</a>
+			  	<a href="#workout">Workouts</a>
+			  	<a href="#diet">Diet Plans</a>
+			  	<a href="#BMI">BMI Calculator</a>
+			  	<a href="#about">About us</a>
+		   </div>
+		</div>
+		<div class="page-container"> <!-- page container -->
+		    <!-- Landing Page -->
+				<div class="landing-page" id="home">
+						<!-- Half carousel -->
+				<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="0"  class="active" aria-current="true" aria-label="Slide 1"
+    ></button>
+    <button type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.dropbox.com/s/uj54h7t4tnhiegq/jonathan-borba-lrQPTQs7nQQ-unsplash.jpg?raw=1" class="d-block w-100" alt="..."/>
+      <div class="mask">
+      <div class="carousel-caption"><h3>Workout Guide</h3></div> </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.dropbox.com/s/0zr6a1y43rt2opo/louis-hansel--9CjvlbUGhY-unsplash.jpg?raw=1" class="d-block w-100" alt="..."/>
+      <div class="mask">
+      <div class="carousel-caption"><h3>Diet Plan</h3></div> </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.dropbox.com/s/d4gopkgeygskv15/BMI.jpg?raw=1" class="d-block w-100" alt="..."/>
+      <div class="mask">
+      <div class="carousel-caption"><h3>Know Your BMI</h3></div> </div>
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-mdb-target="#carouselExampleIndicators"
+    data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-mdb-target="#carouselExampleIndicators"
+    data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
+  <!-- End carousel -->
+  
+  <h2>Services Offered</h2>
+  <div class="landing-desc">
+  		<p><span>Workout Guide</span><br><br>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts, healthy recipes and informative articles, as well as one of the most positive communities on the web, you’ll have everything you need to reach your personal fitness goals – for free!</p>
+  		<p><span>Diet plan for free!</span><br><br>Workout and Fitness guide is a freemium website that allows users to get fitness and food advice. It also lets users find out their Body Mass Index, making it an ideal one-stop shop for fitness and dieting. There are also some video tutorials that you can use as part of your workout-routine.</p>
+  		<p><span>BMI Calculator</span><br><br>We also have built in calculator designed to calculate your BMI base on data you will input. Depending on the result we will be recommending a sample diet plan for you!</p>
+  		</div>
+				
+				</div> <!-- end of home -->
+				
+				
+				
+				
+				
+				<!-- Workout page -->
+				<div class="workout-page" id="workout">
+						<!-- controls -->
+						<div class="modal-controls">
+								<div class="maleBtn">
+										<h2>Workouts for Male</h2>
+										<a href="#upperM">Upper Body Workout</a>
+										<a href="#lowerM">Lower Body Workout</a>
+										<i class="fas fa-male"></i>
+								</div>
+								<div class="femaleBtn">
+										<h2>Workouts for Female</h2>
+										<a href="#upperF">Upper Body Workout</a>
+										<a href="#lowerF">Lower Body Workout</a>
+										<i class="fas fa-female"></i>
+								</div>
+								
+						</div> <!-- end of buttons -->
+					
+					<!-- Upper -->
+						<div class="workout-modal" id="upperM">
+								<div class="modal-container">
+										<a href="#" class="close">&times;</a>
+										<h2>Upper Body Workout for Male</h2>
+										
+										<!-- arms -->
+										<div class="drop-container">
+												<div class="drop-content">
+														<a class="drop-trigger" data-mdb-toggle="collapse" href="#maleArm">Arm Workouts</a>
+														<div class="hidden-content collapse" id="maleArm">
+																<img src="https://www.dropbox.com/s/aa9bq3ds8ama56e/diamond%20push%20up.jpg?raw=1" alt="Sample">
+								<p><span>Diamond Push-ups</span><br><br>With proper form, diamond push-ups activate chest muscles like the pectoralis major,<br>shoulder muscles like the anterior deltoid,and leg muscles like the quadriceps.<br>Diamond push-ups increase core stability and strength.</p>
+								<img src="https://www.dropbox.com/s/te9kfo7acxnuw08/bodyweight.jpg?raw=1" alt="Sample">
+								<p><span>Bodyweight Triceps Dip</span><br><br>1.Chaturanga Push-Up On Knees. A) Begin in a kneeling plank position with<br>arms directly below shoulders and body in a straight line back to knees.<br>2.Tricep Dip. A) Start seated with knees bent and feet on the floor.<br>3.Tricep Push-Up.<br>4.Army Crawl Push-Up.</p>
+								<img src="https://www.dropbox.com/s/z1tsvb29th18nb9/bodysaw.jpg?raw=1" alt="Sample">
+								<p><span>Body Saw</span><br><br>Step 1: Assume a standard push-up position with your feet on a pair of Valslides.<br>Step 2: Next, lower yourself down into the bottom portion of the push-up. This is the starting position.<br>Step 3: Begin exercise by sliding your body backward as your arms extend fully. Be sure to keep your body in a straight line and don't allow hips to rise or sag.<br>Step 4: Reverse movement back to starting position. This completes one rep.</p>
+								<img src="https://www.dropbox.com/s/b613vvmghted4f4/side%20plank.jpg?raw=1" alt="Sample">
+								<p><span>Side Plank</span><br><br>Lie on your side with your knees bent, and prop your upper body up on your elbow. Raise your hips off the floor, and hold for 6 seconds. Rest for 10 seconds. Repeat 3 to 5 times.</p>
+								<img src="https://www.dropbox.com/s/r7pp3lfw0wg7fb9/forearm%20plank.png?raw=1" alt="Sample">
+								<p><span>Forearm Plank Reach Out</span><br><br>Forearm planks target the transverse abdominis (that pesky ab muscle below your belly button), the rectus abdominis (the large muscle in your midsection), and the internal and external obliques (the side muscles of your abdominal region).</p>
+								<img src="https://www.dropbox.com/s/vm7bj9pbas9oqsj/plank%20up_down.jpg?raw=1" alt="Sample">
+								<p><span>Plank Up-Down</span><br><br>How many plank ups should I do?<br>As a general guideline, Doug Sklar, a certified personal trainer and founder of PhilanthroFIT in New York City, recommends striving to do three sets of up to 60 seconds. “It's OK to start with shorter sets and work up to 60 seconds,” he says. Plus, shorter planks can still give you a solid workout, Sklar says.</p>
+								<img src="https://www.dropbox.com/s/0yokayaalsw0k8b/lateral%20plank%20walk.jpg?raw=1" alt="Sample">
+								<p><span>Lateral Plank Walk</span><br><br>How do you do a plank walk step by step?<br>Image result for plank walk step<br>Walk your hands forward, moving into a plank, and hold each step to stretch your calves a bit. This warms up the shoulders and hands nicely.<br>Hold the plank for a few seconds to really wake up your core.<br>From your plank, walk your hands back to your feet until you are in another forward bend.</p>
+								<img src="https://www.dropbox.com/s/paqrmooby94a7pi/triceps%20box%20dip.jpg?raw=1" alt="Sample">
+								<p><span>Triceps Box Dip</span><br><br>Your hands should be shoulder-width apart on the surface you are dipping from, with your arms straight.<br>Squeeze your core and glutes then raise your chin and chest to keep your body tight.<br>From there, start the move by bending your elbows.<br>Dip down until your arms are at a 90-degree angle.</p>
+														</div>
+												</div>
+										</div> <!-- end arms -->
+										
+										<!-- Chest -->
+										<div class="drop-container">
+												<div class="drop-content">
+														<a class="drop-trigger" data-mdb-toggle="collapse" href="#maleChest">Chest Workouts</a>
+														<div class="hidden-content collapse" id="maleChest">
+																<img src="https://www.dropbox.com/s/1t9juazaz0gr8i3/decline.jpg?raw=1" alt="Sample">
+								<p><span>Decline push ups</span><br><br>Kneel down with your back to the bench. Put your hands on the floor,<br>shoulders over your wrists and elbows at 45 degrees.<br>Brace your core, glutes, and quads.<br>Push into the floor to return to starting position, extending your elbows.<br>Complete 2 to 4 sets of 8 to 20 repetitions.</p>
+								<img src="https://www.dropbox.com/s/26ggusapz56dtq1/pushup.jpeg?raw=1">
+								<p><span>Standard push ups</span><br><br>1.Get down on all fours, placing your hands slightly wider than your shoulders.<br>2.Straighten your arms and legs.<br>3.Lower your body until your chest nearly touches the floor.<br>4.Pause, then push yourself back up.<br>5.Repeat.</p>
+								<img src="https://www.dropbox.com/s/w1lbav6cy93unqr/plyo%20push.jpg?raw=1" alt="Sample">
+								<p><span>Plyometric Push-ups</span><br><br>How do you do plyometric push-ups?Image result for plyometric  push ups step by step<br>Start in a plank position on your knees, kneeling forward slightly to get in a high plank position.<br>Align your palms under your shoulders. Bend your arms to lower yourself into a pushup.<br>Immediately push back up explosively, taking your hands off the floor.</p>
+								<img src="https://www.dropbox.com/s/o6b9iriyj5k0iv5/wide%20push.jpeg?raw=1" alt="Sample">
+								<p><span>Wide Push-ups</span><br><br>Begin to lower your body by bending your elbows,<br>keeping your core tight and your back flat, until your chest grazes the floor.<br>Elbows will flare more than in a standard pushup.<br>Immediately extend your elbows and push your body back up. Repeat for as many reps as possible for 3 sets.</p>
+								<img src="https://www.dropbox.com/s/aa9bq3ds8ama56e/diamond%20push%20up.jpg?raw=1" alt="Sample">
+								<p><span>Diamond Push-ups</span><br><br>With proper form, diamond push-ups activate chest muscles like the pectoralis major,<br>shoulder muscles like the anterior deltoid,and leg muscles like the quadriceps.<br>Diamond push-ups increase core stability and strength.</p>
+														</div>
+												</div>
+										</div> <!-- end of chest -->
+										
+										<!-- Abdominal -->
+										<div class="drop-container">
+												<div class="drop-content">
+														<a class="drop-trigger" data-mdb-toggle="collapse" href="#maleAbs">Abdominal Workouts</a>
+														<div class="hidden-content collapse" id="maleAbs">
+																<img src="https://www.dropbox.com/s/mya0dz4g7zlbv5p/heel%20touch.jpg?raw=1" alt="Sample">
+								<p><span>Heel touch</span><br><br>And keep your feet flat on the ground shoulder-width apart keep your arm by your side.<br>This is a starting position now exhale and crunch your torso up to your right and touch your right heel.</p>
+								<img src="https://www.dropbox.com/s/jzcc2ehvlnlue8h/leg-raise.jpg?raw=1" alt="Sample">
+								<p><span>Leg raisses</span><br><br>Begin by hovering the feet above the floor end by drawing the legs in until the legs are straight above the hips perpendicular to the torso.</p>
+								<img src="https://www.dropbox.com/s/tie18f7cf945ha8/russian-twist.jpg?raw=1" alt="Sample">
+								<p><span>Russian twists</span><br><br>slightly bend your knees interlock your fingers rotate.<br>At the trunk bringing one elbow towards the floor and slightly drop your knees to the opposite side switch sides exhale with each rotation.</p>
+								<img src="https://www.dropbox.com/s/a9w61w2bmom680r/side%20plank%20with%20dip.jpg?raw=1" alt="Sample">
+								<p><span>Side plank with dips</span><br><br>Lie on your side with legs stretched out and place your elbow on the floor directly underneath your shoulder with palm grasping the floor.<br>Pile your feet on top of each other and lift your body up to neutral.<br>Dip your hips down toward the floor and lift them higher than neutral.<br>Complete at least 4 dips on each side.</p>
+								<img src="https://www.dropbox.com/s/moe80w4r6qtojhm/side%20plank1.jpg?raw=1" alt="Sample">
+								<p><span>Side Plank</span><br><br>Start in an elbow plank. Extend your left leg out to the side, about eight inches, gently tapping your toes on the ground.<br>Bring your foot back into a plank. Repeat the same movement with your right leg.</p>
+														</div>
+												</div>
+										</div>
+										
+								</div> <!-- end of container -->
+						</div> <!-- end of modal -->
+						
+						
+						
+						
+						
+						
+						
+						<!-- Lower -->
+						<div class="workout-modal" id="lowerM">
+								<div class="modal-container">
+										<a href="#" class="close">&times;</a>
+										<h2>Lower Body Workout for Male</h2>
+										<div class="drop-container">
+												<div class="drop-content">
+														<div class="hidden-content">
+																<img src="https://www.dropbox.com/s/e2v6lngkj1xcsyg/squats.jpg?raw=1" alt="">
+																<p><span>Squats</span><br><br>Step 1: Stand straight with feet hip-width apart<br>Step 2: Tighten your stomach muscles.<br>Step 3: Lower down, as if sitting in an invisible chair.<br>Step 4: Straighten your legs to lift back up.<br>Step 5: Repeat the movement.</p>
+							<img src="https://www.dropbox.com/s/jmu0g8ruzrhyhsf/lunges.jpeg?raw=1" alt="Sample">
+							<p><span>Lunges</span><br><br>To correctly do a lunge: Start by standing up tall.<br>Step forward with one foot until your leg reaches a 90-degree angle.<br>Lift your front lunging leg to return to the starting position.<br>Repeat 10 to 12 reps on one leg, or switch off between legs until you've totaled 10 to 12 reps per leg.</p>
+							<img src="https://www.dropbox.com/s/p4zltdy0hg4qc0o/pistol%20squat.png?raw=1" alt="Sample"></img>
+							<p><span>Pistol Squat</span><br><br>Stand on one foot, and lower into a squat.<br>Continue all the way to the bottom of the squat (when your butt touches or nearly touches your heel), slowly and in control, then gently roll onto your back.<br>Roll forward, and carry your momentum to come back up onto your foot and stand up for one repetition.</p>
+							<img src="https://www.dropbox.com/s/986kwhbqn3vkygh/calf%20raise.jpg?raw=1" alt="Sample"></img>
+							<p><span>Calf Raise</span><br><br>With your toes pointing forwards, raise your heels off the floor and contract your calves.</p>
+							<img src="https://www.dropbox.com/s/rle0165sxdu2el4/glute-bridge.jpg?raw=1" alt="Sample"></img>
+							<p><span>Glute Bridge</span><br><br>Lie face up on the floor, with your knees bent and feet flat on the ground.<br>Keep your arms at your side with your palms down.</p>
+							<img src="https://www.dropbox.com/s/pgmjdr0icw94839/stiff-leg-deadlift.jpg?raw=1" alt="Sample"></img>
+							<p><span>Stiff-Leg Deadlift</span><br><br>Straight. As you start to feel a deep stretch in your hamstrings.<br>You're then going to drive through your heels.<br>And pull flexing your hamstrings and glutes to bring the bar back to the starting</p>
+							<img src="https://www.dropbox.com/s/aofjje6dcf48oir/side%20lunges.jpg?raw=1" alt="Sample"></img>
+							<p><span>Side Lunges</span><br><br>Start standing tall, feet hip-width distance apart.<br>Take a wide step out to the left. Bend your left knee as you push your hips back.<br>Push off with your left leg to return to standing.<br>Perform 10 to 12 lunges on the left side before switching to the right.</p>
+																
+														</div>
+												</div>
+										</div> 
+								</div> <!-- end of container -->
+						</div> <!-- end of modal -->
+						
+						
+						<!-- Upper Female -->
+						
+						<div class="workout-modal" id="upperF">
+								<div class="modal-container">
+										<a href="#" class="close">&times;</a>
+										<h2>Upper Body Workout for Female</h2>
+										
+										<!-- arms -->
+										<div class="drop-container">
+												<div class="drop-content">
+														<a class="drop-trigger" data-mdb-toggle="collapse" href="#femaleArm">Arm Workouts</a>
+														<div class="hidden-content collapse" id="femaleArm">
+																<img src="https://www.dropbox.com/s/45y9x8unif1pvye/Lateral%20Raise.jpg?raw=1" alt="Sample">
+								<p><span>Lateral Raise</span><br><br>Stand tall, a dumbbell in each hand.<br>Raise your arms simultaneously just a couple inches out to each side and pause.<br>Lift the dumbbells up and out to each side, keeping your arms almost completely straight, stopping when your elbows reach shoulder-height and your body is forming a "T" shape.</p>
+								<img src="https://www.dropbox.com/s/tza6ae11043em8f/triceps%20push-up.jpg?raw=1" alt="Sample">
+								<p><span>Triceps Push-Up</span><br><br>Your lower down your elbows are gonna stay close to your body stop when your shoulders get in line with your elbows on the way.<br>Up hips stay in line with your shoulders</p>
+								<img src="https://www.dropbox.com/s/hsgovb64kuxiw5l/biceps%20curl.jpeg?raw=1" alt="Sample">
+								<p><span>Biceps Curl</span><br><br>Start standing with a dumbbell in each hand.<br>Your elbows should rest at your sides and your forearms should extend out in front of your body.<br>Bring the dumbbells all the way up to your shoulders by bending your elbows.<br>Reverse the curl slowly and repeat.</p>
+								<img src="https://www.dropbox.com/s/cujxd7xekuf177f/dumbbell%20row.jpg?raw=1" alt="Sample">
+								<p><span>Dumbbell Row</span><br><br>Step 1 Stand with feet shoulder-width apart and hold a dumbbell in each hand.<br>Bend the knees slightly and bend over at the waist with your back straight.<br>Let dumbbells hand in front of the body with arms fully extended.<br>Hold for one second in the top position, then lower the dumbbells to the starting position.</p>
+								<img src="https://www.dropbox.com/s/89eefh2411rizdw/plank%20to%20push-up.jpg?raw=1" alt="Sample">
+								<p><span>Plank to Push-Up</span><br><br>Begin on all fours in a forearm plank, which is a standard plank position with your elbows dropped to the mat.<br>Engage your core to keep your hips as still as possible.<br>Push up onto your other hand.<br>Lower back down to your elbows, one arm at a time.<br>Repeat with alternating arms.</p>
+								<img src="https://www.dropbox.com/s/xuk962bbv17rjod/dumbbell%20curl%20and%20press.jpg?raw=1" alt="Sample">
+								<p><span>Dumbbell Curl and Press</span><br><br>Hold a dumbbell in each hand and stand with your feet as wide apart as your hips.<br>Let your arms hang down at your sides with your palms forward.<br>Pull your abdominals in, stand tall, and keep your knees slightly bent.<br>Curl both arms upward until they're in front of your shoulders.</p>
+								<img src="https://www.dropbox.com/s/4048b28pcosrv41/lateral%20plank%20walk.jpg?raw=1" alt="Sample">
+								<p><span>Lateral Plank Walk</span><br><br>Begin in plank position with your hands underneath your shoulders, and your body in one straight line.<br>Simultaneously cross your right hand toward the left as you step your left foot out to the left.<br>Reverse directions taking three steps the right.<br>Do 15 reps in each direction to complete one set.</p>
+								<img src="https://www.dropbox.com/s/8wmoizs50pzu8fj/triceps%20dips.jpg?raw=1" alt="Sample">
+								<p><span>Triceps Dips</span><br><br>Grip the front edges of a chair or bench with your hand.<br>Hover your butt just off and in front of the seat, feet flat, and legs bent so thighs are parallel to the floor.<br>Straighten your arms.<br>Lower your body toward the floor until your arms form 90-degree angles.</p>
+														</div>
+												</div>
+										</div> <!-- end arms -->
+										
+										<!-- Chest -->
+										<div class="drop-container">
+												<div class="drop-content">
+														<a class="drop-trigger" data-mdb-toggle="collapse" href="#maleChest">Chest Workouts</a>
+														<div class="hidden-content collapse" id="maleChest">
+																<img src="https://www.dropbox.com/s/worgiglaf10c9du/resistance%20band%20arm%20pulses.jpg?raw=1" alt="Sample">
+								<p><span>Resistance Band Arm Pulses</span><br><br>1 As a part of a warmup routine, the lateral band walking exercise engages many of the deep muscles that stabilize the pelvis.<br>Doing this exercise before working out can improve hip, foot, and ankle stability as well as knee joint stabilization.</p>
+								<img src="https://www.dropbox.com/s/vmdd7rwbasbmets/chest%20squeeze.jpg?raw=1" alt="Sample">
+								<p><span>Chest Squeeze</span><br><br>Hold two dumbbells with palms facing forward and your thumbs wrapped around the handle.<br>On an inhale, lower the dumbbells slightly wider than your mid-chest, slowly and with control.<br>Gently touch the dumbbells to your chest.<br>On an exhale, press your arms upwards, keeping your elbows slightly bent.</p>
+								<img src="https://www.dropbox.com/s/a65ka1bjspyqx9m/plank%20rows.jpg?raw=1" alt="Sample">
+								<p><span>Plank Rows</span><br><br>1.Come into plank position with a dumbbell in each hand.<br>2.Keep your plank still and row one arm up on an exhale, keeping your elbow close to your rib cage.<br>3.Repeat the row movement, alternating arms without losing the stability of your plank.</p>
+								<img src="https://www.dropbox.com/s/2i8y8u8q34cwkf9/hook%20punches%20exercise.jpg?raw=1" alt="Sample">
+								<p><span>Hook Punches</span><br><br>As you swing, bring your lead elbow directly behind your lead fist so that your punch lands with your lead arm bent at the elbow and your closed fist and knuckles pointing down.When you throw your punch, exhale sharply and keep your chin low and tight to your body the whole time.</p>
+								<img src="https://www.dropbox.com/s/82igtbbum9jm9qg/pushups.jpg?raw=1" alt="Sample">
+								<p><span>Pushups</span><br><br>Get down on all fours, placing your hands slightly wider than your shoulders.<br>Straighten your arms and legs.<br>Lower your body until your chest nearly touches the floor.<br>Pause, then push yourself back up.<br>Repeat.</p>
+								<img src="https://www.dropbox.com/s/up64hvwlmo2xsij/lying%20chest%20fly.jpg?raw=1" alt="Sample">
+								<p><span>Lying Chest Fly</span><br><br> Get down on all fours, placing your hands slightly wider than your shoulders.<br>Straighten your arms and legs.<br>Lower your body until your chest nearly touches the floor.<br>Pause, then push yourself back up.<br>Repeat.</p>
+								<img src="https://www.dropbox.com/s/cuqzgxol6tgwljn/standard%20chest%20press.jpg?raw=1" alt="Sample">
+								<p><span>Standard Chest Press</span><br><br>Is the chest press good for a woman?<br>Image result<br>Marsland explains that the bench press can be extremely beneficial in developing strength in women, since it works several parts of your body.<br>She says women should start gently, especially if they don't already have a lot of upper-body strength.<br>You can also do dips, pushups, and plank variations to build strength.</p>
+								<img src="https://www.dropbox.com/s/gek3zuog323gybq/narrow%20chest%20press.jpg?raw=1" alt="Sample">
+								<p><span>Narrow Chest press</span><br><br>Sit on an exercise bench with a dumbbell in each hand.<br>Using a neutral grip, place and press the dumbbells together.<br>Pull your shoulders down and back, and brace your abs.<br>Lie flat on the bench and hold the dumbbells on your chest.<br>Press the weights inward as hard as you can.<br>Tuck your upper arms into your sides.<br>Push the weights up and over your chest until your arms are straight but not locked.<br>Keep the tension on your pecs by continuing to press the weights together.<br>Lower the dumbbells to your chest and repeat.<br>Do not ease up on the inward pressure; keep pushing the dumbbells together for the entire duration of your set.</p>	
+														</div>
+												</div>
+										</div> <!-- end of chest -->
+										
+										<!-- Abdominal -->
+										<div class="drop-container">
+												<div class="drop-content">
+														<a class="drop-trigger" data-mdb-toggle="collapse" href="#maleAbs">Abdominal Workouts</a>
+														<div class="hidden-content collapse" id="maleAbs">
+																<img src="https://www.dropbox.com/s/dh6es5pves8no36/flutter%20kicks.jpg?raw=1" alt="Sample">
+								<p><span>Flutter kicks</span><br><br>Lie on your back and extend your legs up to a 45-degree angle.<br>Keeping your legs stick straight and glued together with your toes pointed, start lowering one leg.<br>Raise your lowered leg and lower the other, focusing on keeping your core engaged.<br>Continue the movement, alternating between legs.</p>
+								<img src="https://www.dropbox.com/s/s5p8i0h128s1ut9/scissor%20kicks.jpg?raw=1" alt="Sample">
+								<p><span>Scissor Kicks</span><br><br>Lie on your back with your arms down by your sides.<br>Lift both of your legs a few inches off the ground and separate them slightly into a “V” shape.<br>Keeping both legs straight, bring your legs together and cross your right leg over the left.<br>Continue alternating until you've completed all reps.</p>
+								<img src="https://www.dropbox.com/s/g1uxav0hqyjvy55/v-sits.jpg?raw=1" alt="Sample">
+								<p><span>V-sits</span><br><br>Step 1: Sit down on the ground with legs straight out.<br>Step 2: Lift your legs up so that they are at a 45 degree angle with the floor.<br>Step 3: Lean your torso back till it also is at a 45 degree angle.<br>Step 4: Hold your arms out in front of you so they are parallel with your legs.</p>
+								<img src="https://www.dropbox.com/s/6lmpsjk9jxl3mqp/v-ups.jpg?raw=1" alt="Sample">
+								<p><span>V-ups</span><br><br>Lie face-up on the floor with your legs and arms straight and lifted off the floor slightly.<br>In one movement, lift your torso and legs as if you're trying to touch your toes.<br>Lower your body back down. That's one rep.</p>
+								<img src="https://www.dropbox.com/s/qc14xa9e4vsozl4/hip%20dips.jpg?raw=1" alt="Sample">
+								<p><span>Hip Dips</span><br><br>Here's how to do it: Come forward onto your forearms and lift from your core into a plank.<br>Make a fist with each hand, or keep your hands flat on the ground.<br>Pull in your abs as you rotate your hips to the left side and tap the floor.<br>Then rotate to the right and tap the floor on the other side.</p>
+								<img src="https://www.dropbox.com/s/7kpxn2blh0exuq1/toe%20touches.jpeg?raw=1" alt="Sample">
+								<p><span>Toe Touches</span><br><br>Step 1: Stand upright with your feet shoulder width apart, toes facing forward.<br>Step 2: Keep your legs straight and your knees slightly bent with your arms extended down by your side. This is your starting position.<br>Step 3: Keeping your body loose, bend forward at the torso and let your fingers hang down toward your toes.<br>Step 4: Hold for 20 counts and then return to the starting position.</p>
+								<img src="https://www.dropbox.com/s/2l2fcn2ae3qmtch/vertical%20leg%20crunch.jpg?raw=1" alt="Sample">
+								<p><span>Vertical Leg Crunch</span><br><br>To perform a vertical leg crunch lie on your back with your legs straight up placing your hands to the sides of your head lift.<br>Your head and shoulders off the floor.</p>
+								<img src="https://www.dropbox.com/s/z95a4awoyldhrx9/leg%20lifts.jpg?raw=1" alt="Sample">
+								<p><span>Leg Lifts</span><br><br>Lie on your back, legs straight and together.<br>Keep your legs straight and lift them all the way up to the ceiling until your butt comes off the floor.<br>Slowly lower your legs back down till they're just above the floor. Hold for a moment.<br>Raise your legs back up. Repeat.</p>
+														</div>
+												</div>
+										</div>
+										
+								</div> <!-- end of container -->
+						</div> <!-- end of modal -->
+						
+						<!-- Lower female -->
+						<div class="workout-modal" id="lowerF">
+								<div class="modal-container">
+										<a href="#" class="close">&times;</a>
+										<h2>Lower Body Workout for Female</h2>
+										<div class="drop-container">
+												<div class="drop-content">
+														<div class="hidden-content">
+																<img https://www.dropbox.com/s/w0aqhs5db45q53a/bridge.jpg?raw=1" alt="Sample">
+						<p><span>Bridge</span><br><br>Lower. Right back down. Now.<br>As you come down you want to make sure that your lower back kisses.<br>The ground that way you know that your core is still engaged.<br>Before you come right back up</p>
+						<img src="https://www.dropbox.com/s/wtgv2dgodqg4r13/single%20leg%20bridge.jpg?raw=1" alt="Sample">
+						<p><span>Single leg bridge</span><br><br>You press up you're going to focus on just one leg here keeping all the weight in your heel of the leg that's on the floor.</p>
+						<img src="https://www.dropbox.com/s/g6lph91nkrf8n06/marching%20bridge.jpg?raw=1" alt="Sample">
+						<p><span>Marching Bridge</span><br><br>You go three sets and that should be enough to get your glutes and your hamstrings activated.<br>And that's how you do a glute bridge March.</p>
+						<img src="https://www.dropbox.com/s/z8brgpoqjs73t9f/backward%20lunges.jpeg?raw=1" alt="Sample">
+						<p><span>Backward Lunges</span><br><br>Stand tall with your feet hip distance apart.<br>Take a large step backward and lower your body toward the floor.<br>Both legs should be bent at a 90-degree angle at the bottom of the lunge.<br>Rise back to start and repeat. Targets: glutes, quads, hamstrings.</p>
+						<img src="https://www.dropbox.com/s/ht3qxbcv2vuse0h/single%20leg%20hip%20thrust.jpg?raw=1" alt="Sample">
+						<p><span>Single Leg Hip Thrust</span><br><br>So letting your hips drop under into extension of the back and then tucking squeezing you can even use your hand.<br>Feel that glute working driving through that leg.</p>
+						<img src="https://www.dropbox.com/s/9nhwepsuw892c7r/fire%20hydrant.jpg?raw=1" alt="Sample">
+						<p><span>Fire Hydrant</span><br><br>You can place your hands on the back of a chair for balance.<br>Stand with your legs hip-width apart.<br>Lift your leg to 45 degrees without moving the rest of your body.<br>Lower your leg to starting position to complete 1 rep.</p>
+						<img src="https://www.dropbox.com/s/sxltlitcxwxxtfv/frog%20pump.jpg?raw=1" alt="Sample">
+						<p><span>Frog Pump</span><br><br>1.Sit back with your feet in a wide stance and with the toes turned out at an angle.<br>2.Jump forward and up, land on your toes, and squat.<br>3.Jump back and return to the starting position.<br>4.Repeat this back and forth movement until the set is complete.</p>
+						<img src="https://www.dropbox.com/s/as7ctcgw3mtgnxj/donkey%20kicks.jpg?raw=1" alt="Sample">
+						<p><span>Donkey Kicks</span><br><br>Position yourself on all fours on a mat.<br>Position your hands underneath your shoulders and place your knees under your hips.<br>Keep your right knee bent at 90 degrees and flex the foot as you lift the knee until it is level with the hip.<br>Lower the knee without touching the floor and repeat the lift.<br>Once you’ve completed the reps on the right leg, switch legs.</p>
+						<img src="https://www.dropbox.com/s/e7v02xnkjiumghz/bulgarian%20split%20squats.jpg?raw=1" alt="Sample">
+						<p><span>Bulgarian Split Squats</span><br><br>Get down on all fours and position your hands under your shoulders and your knees under your hips.<br>Kick back with one leg and squeeze the glutes.<br>Bend the knee, lower the leg, and repeat.<br>Switch legs. Proper Form And Breathing Pattern.</p>
+														</div>
+												</div>
+										</div> 
+								</div> <!-- end of container -->
+						</div> <!-- end of modal -->
+						
+				</div> <!-- end of workout page -->
+				<div class="dietplan-page" id="diet">
+						
+				</div> <!-- end of diet plant page -->
+				<div class="BMI-page" id="BMI">
+						
+				</div> <!-- end of BMI Calculator -->
+				<div class="about-page" id="about">
+						
+				</div> <!-- end of about page -->
+		</div> <!-- end of page container -->
+		
+		
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.0/mdb.min.js"></script>
+</body>
+</html>
